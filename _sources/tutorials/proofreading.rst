@@ -1,5 +1,5 @@
 .. warning::
-   **Legacy Documentation Notice**
+   **Legacy SLEAP Docs**
    
    This documentation site (`legacy.sleap.ai`) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to `docs.sleap.ai <https://docs.sleap.ai>`_.
 
