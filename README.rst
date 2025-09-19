@@ -12,7 +12,7 @@
 
 .. |Documentation| image:: 
    https://img.shields.io/badge/Documentation-sleap.ai-lightgrey
-   :target: https://sleap.ai
+   :target: https://legacy.sleap.ai
    :alt: Documentation
   
 .. |Downloads| image::
@@ -39,7 +39,7 @@
 Social LEAP Estimates Animal Poses (SLEAP)
 ==========================================
 
-.. image:: https://sleap.ai/docs/_static/sleap_movie.gif
+.. image:: https://legacy.sleap.ai/docs/_static/sleap_movie.gif
     :width: 600px
 
 **SLEAP** is an open source deep-learning based framework for multi-animal pose tracking `(Pereira et al., Nature Methods, 2022) <https://www.nature.com/articles/s41592-022-01426-1>`__. It can be used to track any type or number of animals and includes an advanced labeling/training GUI for active learning and proofreading.
@@ -78,12 +78,12 @@ Quick install
     pip install sleap[pypi]
 
 
-See the docs for `full installation instructions <https://sleap.ai/installation.html>`_.
+See the docs for `full installation instructions <https://legacy.sleap.ai/installation.html>`_.
 
 Learn to SLEAP
 --------------
-- **Learn step-by-step**: `Tutorial <https://sleap.ai/tutorials/tutorial.html>`_
-- **Learn more advanced usage**: `Guides <https://sleap.ai/guides/>`__ and `Notebooks <https://sleap.ai/notebooks/>`__
+- **Learn step-by-step**: `Tutorial <https://legacy.sleap.ai/tutorials/tutorial.html>`_
+- **Learn more advanced usage**: `Guides <https://legacy.sleap.ai/guides/>`__ and `Notebooks <https://legacy.sleap.ai/notebooks/>`__
 - **Learn by watching**: `ABL:AOC 2023 Workshop <https://www.youtube.com/watch?v=BfW-HgeDfMI>`_ and `MIT CBMM Tutorial <https://cbmm.mit.edu/video/decoding-animal-behavior-through-pose-tracking>`_
 - **Learn by reading**: `Paper (Pereira et al., Nature Methods, 2022) <https://www.nature.com/articles/s41592-022-01426-1>`__ and `Review on behavioral quantification (Pereira et al., Nature Neuroscience, 2020) <https://rdcu.be/caH3H>`_
 - **Learn from others**: `Discussions on Github <https://github.com/talmolab/sleap/discussions>`_
@@ -141,7 +141,7 @@ Follow `@talmop <https://twitter.com/talmop>`_ on Twitter for news and updates!
 
 **Technical issue with the software?**
 
-1. Check the `Help page <https://sleap.ai/help.html>`_.
+1. Check the `Help page <https://legacy.sleap.ai/help.html>`_.
 2. Ask the community via `discussions on Github <https://github.com/talmolab/sleap/discussions>`_.
 3. Search the `issues on GitHub <https://github.com/talmolab/sleap/issues>`_ or open a new one.
 
@@ -181,11 +181,11 @@ SLEAP is released under a `Clear BSD License <https://raw.githubusercontent.com/
 
 Links
 ------
-* `Documentation Homepage <https://sleap.ai>`_
-* `Overview <https://sleap.ai/overview.html>`_
-* `Installation <https://sleap.ai/installation.html>`_
-* `Tutorial <https://sleap.ai/tutorials/tutorial.html>`_
-* `Guides <https://sleap.ai/guides/index.html>`_
-* `Notebooks <https://sleap.ai/notebooks/index.html>`_
-* `Developer API <https://sleap.ai/api.html>`_
-* `Help <https://sleap.ai/help.html>`_
+* `Documentation Homepage <https://legacy.sleap.ai>`_
+* `Overview <https://legacy.sleap.ai/overview.html>`_
+* `Installation <https://legacy.sleap.ai/installation.html>`_
+* `Tutorial <https://legacy.sleap.ai/tutorials/tutorial.html>`_
+* `Guides <https://legacy.sleap.ai/guides/index.html>`_
+* `Notebooks <https://legacy.sleap.ai/notebooks/index.html>`_
+* `Developer API <https://legacy.sleap.ai/api.html>`_
+* `Help <https://legacy.sleap.ai/help.html>`_
