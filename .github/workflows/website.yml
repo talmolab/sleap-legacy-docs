@@ -7,10 +7,6 @@ on:
     branches:
       # 'legacy-docs-main' triggers updates to 'legacy.sleap.ai'
       - legacy-docs-main
-    paths:
-      - "docs/**"
-      - "README.rst"
-      - ".github/workflows/website.yml"
   workflow_dispatch:  # Allows manual triggering from GitHub UI
 
 
