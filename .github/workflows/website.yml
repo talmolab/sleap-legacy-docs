@@ -4,7 +4,10 @@ name: Build website
 
 on:
   workflow_dispatch:  # Allows manual triggering from GitHub UI
-
+  push:
+    branches:
+      - legacy-docs-main
+      - talmo/test-actions
 
 jobs:
   build:
