@@ -9,6 +9,6 @@ channels:
 
 dependencies:
     - conda-forge::pip
-    - conda-forge::python ~=3.7    # Run into _MAX_WINDOWS_WORKERS not found if ==
+    - conda-forge::python=3.7
     - pip:  
         - "--editable=.[conda_dev]"
