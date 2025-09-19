@@ -26,7 +26,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v3.0.3
         with:
           python-version: 3.7
-          environment-file: environment_no_cuda.yml
+          environment-file: environment_website_build.yml
           activate-environment: sleap_ci
       - name: Print environment info
         shell: bash -l {0}
