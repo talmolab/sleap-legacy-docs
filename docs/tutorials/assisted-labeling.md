@@ -1,9 +1,3 @@
-```{admonition} Legacy Documentation Notice
-:class: warning
-
-This documentation site (`legacy.sleap.ai`) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to [docs.sleap.ai](https://docs.sleap.ai).
-```
-
 ---
 substitutions:
   imagefix: |-
@@ -12,6 +6,12 @@ substitutions:
 ---
 
 (assisted-labeling)=
+
+```{admonition} Legacy SLEAP Docs
+:class: warning
+
+This documentation site (`legacy.sleap.ai`) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to [docs.sleap.ai](https://docs.sleap.ai).
+```
 
 # Prediction-assisted labeling
 
