@@ -1,3 +1,9 @@
+```{admonition} Legacy Documentation Notice
+:class: warning
+
+This documentation site (`legacy.sleap.ai`) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to [docs.sleap.ai](https://docs.sleap.ai).
+```
+
 # Help
 
 Stuck? Can't get SLEAP to run? Crashing? Try the recommended tips below.
@@ -123,7 +129,7 @@ Feel free to reach out to us at `talmo@salk.edu` if you have a question that isn
 
 - Share new ideas for new features or improvements in the [Discussion forum](https://github.com/talmolab/sleap/discussions/categories/ideas).
 
-- Contribute some code! See our [contribution guidelines](https://sleap.ai/CONTRIBUTING.html) for more info.
+- Contribute some code! See our [contribution guidelines](https://legacy.sleap.ai/CONTRIBUTING.html) for more info.
 
 
 (usage-data)=

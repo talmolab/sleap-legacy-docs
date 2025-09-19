@@ -49,12 +49,12 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/initial-labeling';</script>
-    <link rel="canonical" href="/develop/tutorials/initial-labeling.html" />
+    <link rel="canonical" href="/tutorials/initial-labeling.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Training and Inference" href="initial-training.html" />
-    <link rel="prev" title="Creating a project" href="new-project.html" />
+    <link rel="prev" title="substitutions: image0: |- {image} ../_static/add-video.gif     image1: |- {image} ../_static/video-options.gif     image2: |- {image} ../_static/add-skeleton.gif    " href="new-project.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -142,10 +142,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="tutorial.html">Tutorial</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="new-project.html">Creating a project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="new-project.html">substitutions:
+image0: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/add-video.gif</span>     </code>
+image1: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/video-options.gif</span>     </code>
+image2: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/add-skeleton.gif</span>     </code></a></li>
+
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Initial Labeling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="initial-training.html">Training and Inference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assisted-labeling.html">Prediction-assisted labeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assisted-labeling.html">substitutions:
+imagefix: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/fixing-predictions.gif</span>     </code></a></li>
+
 
 <li class="toctree-l2"><a class="reference internal" href="proofreading.html">Tracking instances across frames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analysis.html">Export Data For Analysis</a></li>
@@ -158,7 +168,22 @@
 <li class="toctree-l2"><a class="reference internal" href="../guides/skeletons.html">Skeleton design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/choosing-models.html">Configuring models</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/merging.html">Importing predictions for labeling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/proofreading.html">Tracking and proofreading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/proofreading.html">substitutions:
+orange_leg: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/orange-leg.jpg</span>     </code>
+orange_track: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/orange-track.jpg</span>     </code>
+swap_trails: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/swap-trails.jpg</span>     </code>
+track_fixing_list: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/track-fixing-list.jpg</span>     </code>
+velocity_suggestions: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/velocity-suggestions.jpg</span>     </code>
+wedges: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/wedges.jpg</span>     </code>
+set_instance_count: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/set-instance-count.jpg</span>     </code></a></li>
+
 <li class="toctree-l2"><a class="reference internal" href="../guides/colab.html">Run training and inference on Colab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/custom-training.html">Creating a custom training profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/remote.html">Running SLEAP remotely</a></li>
@@ -330,7 +355,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="initial-labeling">
+  <div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Legacy Documentation Notice</strong></p>
+<p>This documentation site (<code class="xref py py-obj docutils literal notranslate"><span class="pre">legacy.sleap.ai</span></code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP&gt;1.4.1, please refer to <a class="reference external" href="https://docs.sleap.ai">docs.sleap.ai</a>.</p>
+</div>
+<section id="initial-labeling">
 <span id="id1"></span><h1>Initial Labeling<a class="headerlink" href="#initial-labeling" title="Permalink to this heading">#</a></h1>
 <section id="selecting-frames-to-label">
 <span id="selecting-frames"></span><h2>Selecting frames to label<a class="headerlink" href="#selecting-frames-to-label" title="Permalink to this heading">#</a></h2>
@@ -408,7 +438,13 @@ predicting body part locations.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Creating a project</p>
+        <p class="prev-next-title">substitutions:
+image0: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/add-video.gif</span>&#160;&#160;&#160;&#160; </code>
+image1: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/video-options.gif</span>&#160;&#160;&#160;&#160; </code>
+image2: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/add-skeleton.gif</span>&#160;&#160;&#160;&#160; </code></p>
       </div>
     </a>
     <a class="right-next"
@@ -465,7 +501,7 @@ By SLEAP Developers
     
   <p class="copyright">
     
-      © Copyright 2019–2024, Talmo Lab.
+      © Copyright 2019–2025, Talmo Lab.
       <br/>
     
   </p>

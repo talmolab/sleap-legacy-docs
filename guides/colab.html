@@ -49,12 +49,12 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'guides/colab';</script>
-    <link rel="canonical" href="/develop/guides/colab.html" />
+    <link rel="canonical" href="/guides/colab.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Creating a custom training profile" href="custom-training.html" />
-    <link rel="prev" title="Tracking and proofreading" href="proofreading.html" />
+    <link rel="prev" title="substitutions: orange_leg: |- {image} ../_static/orange-leg.jpg     orange_track: |- {image} ../_static/orange-track.jpg     swap_trails: |- {image} ../_static/swap-trails.jpg     track_fixing_list: |- {image} ../_static/track-fixing-list.jpg     velocity_suggestions: |- {image} ../_static/velocity-suggestions.jpg     wedges: |- {image} ../_static/wedges.jpg     set_instance_count: |- {image} ../_static/set-instance-count.jpg    " href="proofreading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -142,10 +142,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials/tutorial.html">Tutorial</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../tutorials/new-project.html">Creating a project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/new-project.html">substitutions:
+image0: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/add-video.gif</span>     </code>
+image1: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/video-options.gif</span>     </code>
+image2: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/add-skeleton.gif</span>     </code></a></li>
+
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/initial-labeling.html">Initial Labeling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/initial-training.html">Training and Inference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tutorials/assisted-labeling.html">Prediction-assisted labeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/assisted-labeling.html">substitutions:
+imagefix: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/fixing-predictions.gif</span>     </code></a></li>
+
 
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/proofreading.html">Tracking instances across frames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/analysis.html">Export Data For Analysis</a></li>
@@ -158,7 +168,22 @@
 <li class="toctree-l2"><a class="reference internal" href="skeletons.html">Skeleton design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="choosing-models.html">Configuring models</a></li>
 <li class="toctree-l2"><a class="reference internal" href="merging.html">Importing predictions for labeling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="proofreading.html">Tracking and proofreading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proofreading.html">substitutions:
+orange_leg: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/orange-leg.jpg</span>     </code>
+orange_track: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/orange-track.jpg</span>     </code>
+swap_trails: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/swap-trails.jpg</span>     </code>
+track_fixing_list: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/track-fixing-list.jpg</span>     </code>
+velocity_suggestions: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/velocity-suggestions.jpg</span>     </code>
+wedges: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/wedges.jpg</span>     </code>
+set_instance_count: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/set-instance-count.jpg</span>     </code></a></li>
+
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Run training and inference on Colab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom-training.html">Creating a custom training profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="remote.html">Running SLEAP remotely</a></li>
@@ -328,10 +353,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="run-training-and-inference-on-colab">
+  <div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Legacy Documentation Notice</strong></p>
+<p>This documentation site (<code class="xref py py-obj docutils literal notranslate"><span class="pre">legacy.sleap.ai</span></code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP&gt;1.4.1, please refer to <a class="reference external" href="https://docs.sleap.ai">docs.sleap.ai</a>.</p>
+</div>
+<section id="run-training-and-inference-on-colab">
 <span id="colab"></span><h1>Run training and inference on Colab<a class="headerlink" href="#run-training-and-inference-on-colab" title="Permalink to this heading">#</a></h1>
 <p><em>Case: You already have a project with labeled training data and you’d like to run training or inference in a Colab notebook.</em></p>
-<p>Take a look at our <a class="reference external" href="https://sleap.ai/notebooks">example notebooks</a> which you can run on Colab! These will walk you through the entire process of running training and inference on Colab.</p>
+<p>Take a look at our <a class="reference external" href="https://legacy.sleap.ai/notebooks">example notebooks</a> which you can run on Colab! These will walk you through the entire process of running training and inference on Colab.</p>
 <section id="about-colab">
 <h2>About Colab<a class="headerlink" href="#about-colab" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/">Google Colaboratory</a> is a hosted service from Google that lets you run Python code (like SLEAP) on Google’s servers with access to GPUs for training and inference. It’s free!</p>
@@ -366,7 +396,21 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tracking and proofreading</p>
+        <p class="prev-next-title">substitutions:
+orange_leg: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/orange-leg.jpg</span>&#160;&#160;&#160;&#160; </code>
+orange_track: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/orange-track.jpg</span>&#160;&#160;&#160;&#160; </code>
+swap_trails: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/swap-trails.jpg</span>&#160;&#160;&#160;&#160; </code>
+track_fixing_list: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/track-fixing-list.jpg</span>&#160;&#160;&#160;&#160; </code>
+velocity_suggestions: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/velocity-suggestions.jpg</span>&#160;&#160;&#160;&#160; </code>
+wedges: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/wedges.jpg</span>&#160;&#160;&#160;&#160; </code>
+set_instance_count: |-
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">../_static/set-instance-count.jpg</span>&#160;&#160;&#160;&#160; </code></p>
       </div>
     </a>
     <a class="right-next"
@@ -421,7 +465,7 @@ By SLEAP Developers
     
   <p class="copyright">
     
-      © Copyright 2019–2024, Talmo Lab.
+      © Copyright 2019–2025, Talmo Lab.
       <br/>
     
   </p>
