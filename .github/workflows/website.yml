@@ -40,20 +40,11 @@ jobs:
           python make_api_doctree.py
           make html
 
-      - name: Deploy (sleap.ai)
+      - name: Deploy (legacy.sleap.ai)
         uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/legacy-docs-main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: docs/build/html
           keep_files: true
-
-      - name: Deploy (test)
-        uses: peaceiris/actions-gh-pages@v4
-        if: github.ref != 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: docs/build/html
-          destination_dir: develop

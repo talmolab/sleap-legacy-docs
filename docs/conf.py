@@ -41,7 +41,7 @@ release = "v1.4.1"
 html_title = f"SLEAP ({release})"
 html_short_title = "SLEAP"
 html_favicon = "_static/favicon.ico"
-html_baseurl = "/develop/"
+html_baseurl = "/"
 
 # -- General configuration ---------------------------------------------------
 
