@@ -11,6 +11,8 @@ on:
       - "docs/**"
       - "README.rst"
       - ".github/workflows/website.yml"
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
 
 jobs:
   build:
