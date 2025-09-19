@@ -1,3 +1,9 @@
+```{admonition} Legacy Documentation Notice
+:class: warning
+
+This documentation site (`legacy.sleap.ai`) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to [docs.sleap.ai](https://docs.sleap.ai).
+```
+
 # Contributing to SLEAP
 
 As our community grows it is important to adhere to a set of contribution guidelines. These guidelines may change as needed. Please feel free to propose changes to source code in a pull request! 
@@ -34,7 +40,7 @@ Github has made it easy to separate issues from discussions. Generally speaking,
 
 ### Pull Requests
 
-1) Install source code [`develop` branch](https://sleap.ai/installation.html#conda-from-source) and follow instructions to create conda env, etc.
+1) Install source code [`develop` branch](https://legacy.sleap.ai/installation.html#conda-from-source) and follow instructions to create conda env, etc.
 2) Create a fork from the `develop` branch.
    * Either work on the `develop` branch or create a new branch (recommended if tackling multiple issues at a time).
    * If creating a branch, use your name followed by a relevant keyword for your changes, eg: `git checkout -b john/some_issue`
