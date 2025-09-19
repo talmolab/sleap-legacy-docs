@@ -6,9 +6,7 @@ on:
   push:
     branches:
       # 'main' triggers updates to 'sleap.ai', all others to 'sleap.ai/develop'
-      - main
-      - develop # Run
-      - liezl/bump-to-1.4.1
+      - legacy-docs-main
     paths:
       - "docs/**"
       - "README.rst"
