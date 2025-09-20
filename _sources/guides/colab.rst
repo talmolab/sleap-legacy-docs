@@ -10,7 +10,7 @@ Run training and inference on Colab
 
 *Case: You already have a project with labeled training data and you'd like to run training or inference in a Colab notebook.*
 
-Take a look at our `example notebooks <https://legacy.sleap.ai/notebooks>`_ which you can run on Colab! These will walk you through the entire process of running training and inference on Colab.
+Take a look at our `example notebooks <http://legacy.sleap.ai/notebooks>`_ which you can run on Colab! These will walk you through the entire process of running training and inference on Colab.
 
 About Colab
 ~~~~~~~~~~~

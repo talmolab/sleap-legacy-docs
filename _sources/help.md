@@ -129,7 +129,7 @@ Feel free to reach out to us at `talmo@salk.edu` if you have a question that isn
 
 - Share new ideas for new features or improvements in the [Discussion forum](https://github.com/talmolab/sleap/discussions/categories/ideas).
 
-- Contribute some code! See our [contribution guidelines](https://legacy.sleap.ai/CONTRIBUTING.html) for more info.
+- Contribute some code! See our [contribution guidelines](http://legacy.sleap.ai/CONTRIBUTING.html) for more info.
 
 
 (usage-data)=
