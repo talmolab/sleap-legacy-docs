@@ -130,7 +130,7 @@ html_theme = "sphinx_book_theme"
 # https://pradyunsg.me/furo/customisation/
 html_theme_options = {
     # Set this to add a site-wide banner:
-    # "announcement": "<em>Important</em> announcement!",
+    "announcement": "⚠️ <strong>Legacy Documentation Notice:</strong> This documentation site (<code>legacy.sleap.ai</code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to <a href='https://docs.sleap.ai' target='_blank'>docs.sleap.ai</a>.",
     # "light_logo": "logo.png",
     # "dark_logo": "logo.png",
     # https://sphinx-book-theme.readthedocs.io/en/stable/customize/index.html#theme-options
