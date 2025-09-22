@@ -98,6 +98,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠️ <strong>Legacy Documentation Notice:</strong> This documentation site (<code>legacy.sleap.ai</code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to <a href='https://docs.sleap.ai' target='_blank'>docs.sleap.ai</a>.</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -317,12 +323,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Legacy SLEAP Docs</strong></p>
-<p>This documentation site (<code class="xref py py-obj docutils literal notranslate"><span class="pre">legacy.sleap.ai</span></code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP&gt;1.4.1, please refer to <a class="reference external" href="https://docs.sleap.ai">docs.sleap.ai</a>.</p>
-</div>
-<section id="overview">
+  <section id="overview">
 <span id="high-level-overview"></span><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
 <img alt="_images/workflow.png" src="_images/workflow.png" />
 <p>In a nutshell, SLEAP allows you to train and use deep learning-based models that can automatically track the movements of any body parts of any number or type of animal from recorded videos. This enables precise and quantitative analysis of behavioral data.</p>
@@ -330,7 +331,7 @@ document.write(`
 <ol class="arabic">
 <li><dl>
 <dt>Creating a new project and importing video file(s)</dt><dd><p>You may import all or part of the video clips from your experiment footage. These video files will be used to build a ground-truth dataset and train the machine learning model that estimates animal pose.</p>
-<p>See <span class="xref std std-ref">new-project</span>.</p>
+<p>See <a class="reference internal" href="tutorials/new-project.html#new-project"><span class="std std-ref">Creating a project</span></a>.</p>
 </dd>
 </dl>
 </li>
@@ -366,7 +367,7 @@ document.write(`
 </li>
 <li><dl>
 <dt>Refining the predicted labels manually, and repeating the training step until desired model accuracy is achieved</dt><dd><p>In this step you can inspect the predictions and correct them - this is similar to the labeling step, but should be easier since the predictions place the skeletons approximately right.</p>
-<p>See <span class="xref std std-ref">assisted-labeling</span>.</p>
+<p>See <a class="reference internal" href="tutorials/assisted-labeling.html#assisted-labeling"><span class="std std-ref">Prediction-assisted labeling</span></a>.</p>
 </dd>
 </dl>
 </li>

@@ -98,6 +98,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠️ <strong>Legacy Documentation Notice:</strong> This documentation site (<code>legacy.sleap.ai</code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to <a href='https://docs.sleap.ai' target='_blank'>docs.sleap.ai</a>.</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -317,12 +323,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Legacy SLEAP Docs</strong></p>
-<p>This documentation site (<code class="xref py py-obj docutils literal notranslate"><span class="pre">legacy.sleap.ai</span></code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP&gt;1.4.1, please refer to <a class="reference external" href="https://docs.sleap.ai">docs.sleap.ai</a>.</p>
-</div>
-<section id="importing-predictions-for-labeling">
+  <section id="importing-predictions-for-labeling">
 <span id="merging"></span><h1>Importing predictions for labeling<a class="headerlink" href="#importing-predictions-for-labeling" title="Permalink to this heading">#</a></h1>
 <p><em>Case: You have predictions that aren’t in the same project as your original training data and you want to correct some of the predictions and use these corrections to train a better model.</em></p>
 <p>All of your training data must be in a single SLEAP project file (or labels package), so if you have data in multiple files, you’ll need to merge them before you can train on the entire set of data.</p>

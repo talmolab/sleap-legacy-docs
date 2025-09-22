@@ -98,6 +98,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠️ <strong>Legacy Documentation Notice:</strong> This documentation site (<code>legacy.sleap.ai</code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to <a href='https://docs.sleap.ai' target='_blank'>docs.sleap.ai</a>.</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -355,11 +361,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="warning admonition">
-<p class="admonition-title">Legacy SLEAP Docs</p>
-<p>This documentation site (<code class="docutils literal notranslate"><span class="pre">legacy.sleap.ai</span></code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP&gt;1.4.1, please refer to <a class="reference external" href="https://docs.sleap.ai">docs.sleap.ai</a>.</p>
-</div>
-<section class="tex2jax_ignore mathjax_ignore" id="command-line-interfaces">
+  <section class="tex2jax_ignore mathjax_ignore" id="command-line-interfaces">
 <span id="cli"></span><h1>Command line interfaces<a class="headerlink" href="#command-line-interfaces" title="Permalink to this heading">#</a></h1>
 <p>SLEAP provides several types of functionality accessible through a command prompt.</p>
 <section id="gui">
@@ -465,7 +467,7 @@ optional arguments:
 <section id="sleap-track">
 <span id="id4"></span><h3><code class="docutils literal notranslate"><span class="pre">sleap-track</span></code><a class="headerlink" href="#sleap-track" title="Permalink to this heading">#</a></h3>
 <p><code class="code docutils literal notranslate"><span class="pre">sleap-track</span></code> is the command-line interface for running inference using models which have already been trained. Use this for running inference on a remote machine such as an HPC cluster or Colab notebook.</p>
-<p>If you specify how many identities there should be in a frame (i.e., the number of animals) with the <code class="code docutils literal notranslate"><span class="pre">--tracking.clean_instance_count</span></code> argument, then we will use a heuristic method to connect “breaks” in the track identities where we lose one identity and spawn another. This can be used as part of the inference pipeline (if models are specified), as part of the tracking-only pipeline (if the predictions file is specified and no models are specified), or by itself on predictions with pre-tracked identities (if you specify <code class="code docutils literal notranslate"><span class="pre">--tracking.tracker</span> <span class="pre">none</span></code>). See <span class="xref std std-ref">proofreading</span> for more details on tracking.</p>
+<p>If you specify how many identities there should be in a frame (i.e., the number of animals) with the <code class="code docutils literal notranslate"><span class="pre">--tracking.clean_instance_count</span></code> argument, then we will use a heuristic method to connect “breaks” in the track identities where we lose one identity and spawn another. This can be used as part of the inference pipeline (if models are specified), as part of the tracking-only pipeline (if the predictions file is specified and no models are specified), or by itself on predictions with pre-tracked identities (if you specify <code class="code docutils literal notranslate"><span class="pre">--tracking.tracker</span> <span class="pre">none</span></code>). See <a class="reference internal" href="proofreading.html#proofreading"><span class="std std-ref">Tracking and proofreading</span></a> for more details on tracking.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>usage: sleap-track [-h] [-m MODELS] [--frames FRAMES] [--only-labeled-frames] [--only-suggested-frames] [-o OUTPUT] [--no-empty-frames]
                    [--verbosity {none,rich,json}] [--video.dataset VIDEO.DATASET] [--video.input_format VIDEO.INPUT_FORMAT]
                    [--video.index VIDEO.INDEX] [--cpu | --first-gpu | --last-gpu | --gpu GPU] [--max_edge_length_ratio MAX_EDGE_LENGTH_RATIO]

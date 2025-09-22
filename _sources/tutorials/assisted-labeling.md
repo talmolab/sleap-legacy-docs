@@ -7,12 +7,6 @@ substitutions:
 
 (assisted-labeling)=
 
-```{admonition} Legacy SLEAP Docs
-:class: warning
-
-This documentation site (`legacy.sleap.ai`) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to [docs.sleap.ai](https://docs.sleap.ai).
-```
-
 # Prediction-assisted labeling
 
 _Prediction-assisted labeling_ has two main goals. First, it speeds up the labeling

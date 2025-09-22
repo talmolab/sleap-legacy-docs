@@ -98,6 +98,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠️ <strong>Legacy Documentation Notice:</strong> This documentation site (<code>legacy.sleap.ai</code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP>1.4.1, please refer to <a href='https://docs.sleap.ai' target='_blank'>docs.sleap.ai</a>.</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -329,12 +335,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Legacy SLEAP Docs</strong></p>
-<p>This documentation site (<code class="xref py py-obj docutils literal notranslate"><span class="pre">legacy.sleap.ai</span></code>) is only valid for SLEAP ≤1.4.1. For latest docs or for SLEAP&gt;1.4.1, please refer to <a class="reference external" href="https://docs.sleap.ai">docs.sleap.ai</a>.</p>
-</div>
-<section id="training-and-inference">
+  <section id="training-and-inference">
 <span id="initial-training"></span><h1>Training and Inference<a class="headerlink" href="#training-and-inference" title="Permalink to this heading">#</a></h1>
 <p>After labeling about 10 frames and saving the project you can train your first model and start getting initial predictions.</p>
 <div class="admonition note">
@@ -366,7 +367,7 @@ menu. For this tutorial, let’s use the default settings for training with the 
 <span id="initial-inference"></span><h2>Inference<a class="headerlink" href="#inference" title="Permalink to this heading">#</a></h2>
 <p>After each model is trained, inference will run and if everything is successful, you should get a dialog telling you how many frames got predictions. Frames with labels will be marked in the seekbar, so try clicking on the newly marked frames or use the “<strong>Next Labeled Frame</strong>” command in the “Go” menu to step through frames with labels.</p>
 <p>Once you got the initial predictions from the trained models you enter into a human-in-the-loop training cycle, in which you receive predictions and use them to continue to label more examples. You will continue to iterate this process until you have achieved the desired pose labeling accuracy for your dataset. The goal at this stage is to get accurate pose predictions on individual frames. This means that the points for each body part are predicted in the correct locations and that the points are correctly grouped into distinct animal instances.</p>
-<p>Continue to <span class="xref std std-ref">assisted-labeling</span>.</p>
+<p>Continue to <a class="reference internal" href="assisted-labeling.html#assisted-labeling"><span class="std std-ref">Prediction-assisted labeling</span></a>.</p>
 </section>
 </section>
 
